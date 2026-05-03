@@ -49,8 +49,14 @@ text-transform: uppercase;
 
 h4{
 font-weight: 700;
-font-size: 16px;
+font-size: 18px;
 line-height: 100%;
+}
+
+h5{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 100%;
 }
 
 p{
@@ -157,7 +163,7 @@ color:var(--active-active);
 
 a{
     position: relative;
-    &:after{
+&:after{
         background-color: transparent;
         content: "";
         width: 0;
@@ -169,11 +175,11 @@ a{
         border-radius: 5px;
     }
 
-     &:hover::after {
-            width: 100%;
-            background-color: var(--accent-color);
-        }
-}   
+&:hover::after {
+    width: 100%;
+    background-color: var(--accent-color);
+    }
+  }   
 }
  
 }
@@ -181,17 +187,17 @@ a{
 }
 
 .section-1{
-position: relative;
-padding-top: 116px;
-min-height: 100vh;
-overflow: hidden;
+    position: relative;
+    padding-top: 116px;
+    min-height: 100vh;
+    overflow: hidden;
  
 .logo{
-display: flex;    
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
 .svg-logo{
     top: 0;
@@ -205,10 +211,25 @@ text-align: center;
     position: absolute;
     z-index: 1;
     top: 45%;
-    color: var(--white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: var(--gradient-text-gray);
     pointer-events: none;
 
 }
+
+.title-small{
+    position: absolute;
+    top: 57%;
+    z-index: 9999;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: var(--gradient-text-gray);
+    pointer-events: none;
+}
+
 
 .link{
     position: absolute;
@@ -216,29 +237,29 @@ text-align: center;
     z-index: 9999;
 
     svg{
-        &:hover{
-            color: var(--accent-color);
-            transition: 0.3s;
-        }
+&:hover{
+    color: var(--accent-color);
+    transition: 0.3s;
+}
       
     }
-  &:active{
-    svg{
-         transform: rotate(180deg);
-    }
+&:active{
+svg{
+    transform: rotate(180deg);
+}
            
-        }
+      }
 
 }
 }
 
-
 }
+
 
 .section-2{
-padding-top: 80px;
-max-width: 1200px;
-margin: 0 auto;    
+   padding-top: 100px;
+   max-width: 1200px;
+   margin: 0 auto;    
 
 .Our-values{
     display: flex;
@@ -279,12 +300,12 @@ margin: 0 auto;
 
 
 .benefit{
-    padding-top: 100px;
+    margin-top: 250px;
 }
 
 .benefit-title{
     text-align: center;
-      -webkit-background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     background-image: var(--gradient-text);
@@ -292,10 +313,10 @@ margin: 0 auto;
 
 
 .benefit-cards{
-margin-top: 350px;
-display: grid;
-grid-template-columns: 50% 50%;
-gap: 300px 24px;
+    margin-top: 340px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 300px 24px;
 }
 
 .card{
@@ -307,20 +328,116 @@ gap: 300px 24px;
         padding-bottom: 10px;
 }
 
+svg{
+    margin: 20px;
+}
+
 }
 
 .card:nth-child(1),
 .card:nth-child(3),
 .card:nth-child(5){
-position: relative;
-top: -200px;
+    position: relative;
+    top: -200px;
 }
 
 
-svg{
-    margin: 20px;
+.benefit-btn{
+    text-align: center;
+    margin-top: 180px;
 }
 
+.button-benefit{
+    transition: 0.3s;
+    width: 230px;
+    height: 55px;
+    border-radius: 10px;
+    background: var(--gradient-red-text);
+    color: var(--white);
+    text-transform:uppercase;
+    font-weight: 700;
+    text-align: var(--center);
+    border: 1px solid var(--grey-text);
+&:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: var(--gradient-text);
+    width: 235px;
+    height: 60px;
+    }
+}
+
+.reviews{
+    margin-top: 320px;
+    margin-bottom: 200px;
+}
+
+.reviews-title{
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: var(--gradient-text);
+}
+
+.reviews-div{
+    margin-top: 110px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    gap: 120px 80px;
+}
+
+.reviews-blocks{
+    border-radius: 5px;
+    background:transparent;
+
+div{
+      display: flex;
+      gap: 4px;
+      align-items: var(--center);
+}
+h4{
+     margin-left: 5px;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     background-image: var(--gradient-text);
+     text-transform: uppercase;
+      }
+    
+
+h5{
+        padding-top: 15px;
+        color: var(--active-regular);
+    }
+
+p{
+        padding-top: 10px;
+        color: var(--white);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/container/*/
 }
 
 
