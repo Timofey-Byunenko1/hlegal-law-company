@@ -24,8 +24,11 @@
     --gradient-text-gray: linear-gradient(90.13deg, #ffffff 40.84%, #E6E6F0 50.96%);
 
     --white:#FFFFFF;
+    --black:#000000;
 
     --center:center;
     --flex:flex;
+
+    --gradient-super-white: linear-gradient(330deg, #F5F5FA 89.93%,  #643E72 90.46%);;
 }
 
