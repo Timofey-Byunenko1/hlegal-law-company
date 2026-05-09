@@ -140,29 +140,50 @@ color:var(--active-active);
     row-gap: 12px;
 
     
-.flex{
+.header-nav{
     display: var(--flex);
     justify-content: space-around;
     align-items: center;
     gap: 2px;
 
-    .da{
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+      .h5{           
+        color: var(--white);
         position: relative;
-        ::after{
-            position: absolute;
-            right: 0;
-            bottom: 50%;
-            content: "";
-            width: 6px;
-            height: 6px;
-            color: var(--white);
-            border-radius: 50%;
+
+            &::after{
+                position: absolute;
+                left: -12%;
+                bottom: 28%;
+
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: var(--white);
+            }
+
+            &::before{
+                position: absolute;
+                right: -12%;
+                bottom: 28%;
+
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: var(--white);
+            }
         }
-    }
 }
 
 .button-header{
-    width: 35px;
+    width: 32px;
     height: 25px;
     border-radius: 8px;
     color: var(--white);
@@ -181,6 +202,7 @@ color:var(--active-active);
 
 a{
     position: relative;
+
 &:after{
         background-color: transparent;
         content: "";
@@ -275,7 +297,7 @@ svg{
 
 
 .section-2{
-   padding-top: 100px;
+   padding: 100px 0 0 0;
    max-width: 1200px;
    margin: 0 auto;    
 
@@ -318,7 +340,7 @@ svg{
 
 
 .benefit{
-    margin-top: 250px;
+    margin: 250px 0 0 0;
 }
 
 .benefit-title{
@@ -331,7 +353,7 @@ svg{
 
 
 .benefit-cards{
-    margin-top: 340px;
+    margin: 340px 0 0 0;
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 300px 24px;
@@ -343,7 +365,7 @@ svg{
 
     h3{
         color: var(--active-regular);
-        padding-bottom: 10px;
+        padding:0 0 10px 0;
 }
 
 svg{
@@ -366,7 +388,7 @@ svg{
 }
 
 .button-benefit{
-    transition: 0.3s;
+    transition: 0.2s;
     width: 230px;
     height: 55px;
     border-radius: 10px;
@@ -386,10 +408,13 @@ svg{
     width: 235px;
     height: 60px;
     }
+a{
+    font-weight: 700;
+}
 }
 
 .result{
-    margin-top: 300px;
+    margin: 300px 0 0 0;
 }
 
 .result-title{
@@ -415,8 +440,11 @@ svg{
             color: var(--active-regular);
         }
         h2{
-            text-align: center;
-            color: var(--accent-color);
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: var(--gradient-text);
         }
     }
 }
