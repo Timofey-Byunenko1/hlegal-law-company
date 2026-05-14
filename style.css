@@ -406,7 +406,7 @@ svg{
     background-clip: text;
     background-image: var(--gradient-text);
     width: 235px;
-    height: 60px;
+    transform: scaleY(1.05);
     }
 a{
     font-weight: 700;
