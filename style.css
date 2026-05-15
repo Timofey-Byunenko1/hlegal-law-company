@@ -640,18 +640,23 @@ margin-top: 300px;
     display: grid;
     justify-content: center;
     column-gap: 28px;
-    grid-template-columns: 31% 34% 31%;
+    grid-template-columns: 30% 30% 30%;
 }
 
+
+
 .div-box{
-    background-color: var(--white);
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    
+    width: 420px !important;
+position: relative;    
+padding: 15px;    
+border-radius: 10px;
+background-color: var(--white);
+border: 2px solid transparent; 
+transition: 0.3s ease;  
     img{
         max-width: 100%;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
+        border-radius: 10px;
+        margin-bottom: 10px;
     }
     .title,h3{
         color: var(--active-regular);
@@ -661,15 +666,47 @@ margin-top: 300px;
         color: var(--grey-text);
         margin-bottom: 8px;
     }
-    p{
-        color: var(--black);
-        margin-top: 8px;
+}
+
+.div-box:hover{
+    border: 2px solid var(--active-regular);
+}
+
+.div-box:hover .publication-button{
+    color: var(--white);
+    background-color: var(--active-regular);
+
+    svg{
+        color: var(--white);
     }
 }
 
-.div-text-inbox{
-    padding: 30px ;
+.publication-description{
+    border-top: 4px solid var(--grey-separator);
+    padding: 15px 0 40px 0;
+    margin: 15px 0 0 0;
+    color: var(--black);
 }
+
+.publication-button{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--active-regular);
+    background-color: var(--white);
+    transform: rotate(-45deg);
+    text-align: center;
+    transition: 0.3s ease;
+
+    svg{
+        color: var(--active-regular);
+        display: block;
+    }
+}
+
 
 
 .footer{
