@@ -546,8 +546,7 @@ padding: 24px 0 0 0;
      display: flex !important;
      border-radius: 6px;
      img{
-        border-top-left-radius:6px;
-        border-bottom-left-radius: 6px;
+        border-radius: 50%;
      }
 }
 
