@@ -234,29 +234,34 @@ a{
 }
 
 .main{
+    position: relative;
     padding: 80px 0;
 }
 
-.our-team{
+.our-team-title{
  text-align: center;
- margin: 60px 0 10px 0;
+ margin: 60px 0 24px 0;
  color: var(--grey-text);
+ font-weight: 600;
 }
 
 .team-title{
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 70%;
     text-align: center;
+    padding: 66px 0 0 0;
 }
 
 .title{
-        -webkit-background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     background-image: var(--gradient-text);
 }
 
+
+
+.our-team{
+     margin: 42px 0 0 0;
+}
 
 .team{
     display: grid;

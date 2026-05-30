@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="css/animate.css">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="/img/symbol.png"  >   
@@ -59,10 +62,12 @@
 <div class="container">
 
 <div class="team-title">
-<h1 class="title">We are used to taking responsibility and always guarantee honest, timely assistance,even in situations where most are powerless.</h1>
+<h1 class="title wow animate__fadeIn" data-wow-duration="2.2s">A team you can trust when challenges arise.</h1>
 </div>
 
-<h3 class="our-team">our team:</h3>
+<section class="our-team">
+
+<h2 class="our-team-title wow animate__fadeIn" id="team" data-wow-duration="2.4s">our team:</h2>
 
 <div class="team">
 
@@ -110,9 +115,31 @@
     <button class="button-team"><svg width="60%" height="100%"><use href="/sprite.svg#arrow"></use></svg></button>
 </a>
 
+<a href="/pages/team-entry-Julia.html" class="team-block">
+    <img src="/img/face7.jpg" alt="">
+    <h5 class="team-name">Julia Wolk</h5>
+    <p class="team-job">Associate, Attorney-at-law</p>
+    <button class="button-team"><svg width="60%" height="100%"><use href="/sprite.svg#arrow"></use></svg></button>
+</a>
+
+<a href="/pages/team-entry-Julia.html" class="team-block">
+    <img src="/img/face8.webp" alt="">
+    <h5 class="team-name">Julia Wolk</h5>
+    <p class="team-job">Associate, Attorney-at-law</p>
+    <button class="button-team"><svg width="60%" height="100%"><use href="/sprite.svg#arrow"></use></svg></button>
+</a>
+
+<a href="/pages/team-entry-Julia.html" class="team-block">
+    <img src="/img/face9.avif" alt="">
+    <h5 class="team-name">Julia Wolk</h5>
+    <p class="team-job">Associate, Attorney-at-law</p>
+    <button class="button-team"><svg width="60%" height="100%"><use href="/sprite.svg#arrow"></use></svg></button>
+</a>
+
+
 </div>
 
-
+</section>
 
 
 </div>
@@ -145,6 +172,11 @@
 
 </section>
 
+
+<script src="/wow/wow.js"></script>
+<script>
+  new WOW().init();
+</script>
 
 </body>
 </html>

@@ -273,8 +273,9 @@ a{
 
 .link{
     position: absolute;
-    bottom: 30px;
+    bottom: 5%;
     z-index: 9999;
+    right: 50%;
 
     svg{
 &:hover{
@@ -503,12 +504,9 @@ p{
 
 }
 
-
-
 .lower-section{
     background:var(--grey-bg);
 }
-
 
 .slider-title{
     padding: 150px 0 0 0;
@@ -620,7 +618,6 @@ margin-top: 300px;
     }
 }
 
-
 .publications{
     margin-top: 300px;
 }
@@ -633,7 +630,6 @@ margin-top: 300px;
     background-image: var(--gradient-text);
 }
 
-
 .publication-div{
     padding-top: 60px;
     display: grid;
@@ -641,8 +637,6 @@ margin-top: 300px;
     column-gap: 28px;
     grid-template-columns: 30% 30% 30%;
 }
-
-
 
 .div-box{
     width: 420px !important;
@@ -705,8 +699,6 @@ transition: 0.3s ease;
         display: block;
     }
 }
-
-
 
 .footer{
     border-top: 3px solid var(--grey-separator);

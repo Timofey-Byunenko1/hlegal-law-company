@@ -236,7 +236,7 @@ a{
 
 
 .main{
-    margin: 40px 0;
+    padding: 45px 0;
     text-align: center;
     display: grid;
     grid-template-columns: 75%;
