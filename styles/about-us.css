@@ -237,7 +237,7 @@ a{
 
 .discription{
     display: grid;
-    grid-template-columns: 58% max-content;
+    grid-template-columns: 58% 42%;
     margin-top: 60px;
     padding: 0 180px;
 }
@@ -336,13 +336,26 @@ h1{
 }
 
 .slider-block{
-    display: flex !important;
-    background-color: var(--white);
+    text-align: center;
     height: 110px;
     align-items: center;
     justify-content: center;
     margin: 0 75px;
     border-radius: 6px;
+
+   h1{
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: var(--gradient-text);
+   }
+
+   h2{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: var(--gradient-text);
+   }
 
     img{
         padding: 25px 0;
@@ -350,8 +363,7 @@ h1{
 }
 
 .slick-center{
-height: 120px;
-box-shadow: 5px 4px 3px var(--grey-separator);
+
 }
 
 .footer{

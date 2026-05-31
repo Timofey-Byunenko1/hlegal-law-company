@@ -30,7 +30,6 @@ line-height: 46px;
 h2{
 font-weight: 700;
 font-size: 30px;
-line-height: 100%;
 }
 
 h3{
@@ -389,9 +388,9 @@ svg{
 }
 
 .button-benefit{
+    display: inline-block;
     transition: 0.2s;
-    width: 230px;
-    height: 55px;
+    padding: 22px 74px ;
     border-radius: 10px;
     background: var(--gradient-red-text);
     color: var(--white);
@@ -406,7 +405,7 @@ svg{
     -webkit-text-fill-color: transparent;
     background-clip: text;
     background-image: var(--gradient-text);
-    width: 235px;
+    padding: 22px 76px;
     transform: scaleY(1.05);
     }
 a{
@@ -436,17 +435,15 @@ a{
         display: flex;
         flex-direction: column;
 
-        h1{
-            text-align: center;
-            color: var(--active-regular);
-        }
         h2{
     text-align: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    background-image: var(--gradient-text-gray);
     background-image: var(--gradient-text);
         }
+
     }
 }
 
@@ -505,37 +502,8 @@ p{
 }
 
 .lower-section{
+    padding: 30px 0 0 0;
     background:var(--grey-bg);
-}
-
-.slider-title{
-    padding: 150px 0 0 0;
-    text-align: center;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-image: var(--gradient-text);
-}
-
-.slider{
-padding: 24px 0 0 0; 
-    .text{
-   padding: 18px;    
-        h1{
-            color: var(--accent-color);
-            margin: 2px 0;
-        }
-        h4{
-            color: var(--grey-text);
-            margin: 14px 0 8px 0;
-        }
-        h5{
-            color: var(--active-regular);
-        }
-        h6{
-            color: var(--grey-text);
-        }
-    }
 }
 
 .slider-div{
@@ -550,10 +518,6 @@ padding: 24px 0 0 0;
 
 .section-footer{
     background-color: var(--grey-bg);
-}
-
-.they-trust-us{
-margin-top: 300px;
 }
 
 .trust-title{
