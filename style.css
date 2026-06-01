@@ -36,7 +36,6 @@ font-size: 30px;
 h3{
 font-weight: 700;
 font-size: 22px;
-line-height: 100%;
 }
 
 h6{
@@ -145,6 +144,40 @@ color:var(--active-active);
     row-gap: 12px;
 
     
+
+
+
+.flex-nav{
+    display: var(--flex);
+    justify-content: flex-end;
+    gap: 15px;
+
+a{
+    position: relative;
+
+&:after{
+        background-color: transparent;
+        content: "";
+        width: 0;
+        transition: 0.5s;
+        height: 3px;
+        position: absolute;
+        bottom: -40%;
+        left: 0;
+        border-radius: 5px;
+    }
+
+&:hover::after {
+    width: 100%;
+    background-color: var(--accent-color);
+    }
+  }   
+}
+ 
+}
+
+}
+
 .header-nav{
     display: var(--flex);
     justify-content: space-around;
@@ -200,37 +233,24 @@ color:var(--active-active);
     }
 }
 
-.flex-nav{
-    display: var(--flex);
-    justify-content: flex-end;
-    gap: 15px;
+.header-mobile{
+    padding: 0 30px;
+    display: none;
 
-a{
-    position: relative;
-
-&:after{
-        background-color: transparent;
-        content: "";
-        width: 0;
-        transition: 0.5s;
-        height: 3px;
-        position: absolute;
-        bottom: -40%;
-        left: 0;
-        border-radius: 5px;
+    .header-nav-mobile{
+      display: var(--flex);
+      justify-content: space-between;
+      align-items: center;
     }
 
-&:hover::after {
-    width: 100%;
-    background-color: var(--accent-color);
+    .navigation{
+        h5{
+            color: var(--white);
+            font-weight: 500;
+        }
     }
-  }   
-}
- 
-}
 
 }
-
 
 .section-1{
     position: relative;
@@ -265,16 +285,6 @@ a{
 
 }
 
-.title-small{
-    position: absolute;
-    top: 57%;
-    z-index: 9999;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-image: var(--gradient-text-gray);
-    pointer-events: none;
-}
 
 
 .link{
@@ -302,6 +312,16 @@ svg{
 
 }
 
+.title-small{
+    position: absolute;
+    top: 57%;
+    z-index: 9999;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: var(--gradient-text-gray);
+    pointer-events: none;
+}
 
 .Our-values{
    display: grid;
@@ -784,9 +804,36 @@ transition: 0.3s ease;
         padding: 0 30px;
     }
 
+    .header{
+        display: none;
+    }
+
+    .header-mobile{
+        z-index: 999;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .title-small{
+        top: 60%;
+    }
+
     .Our-values{
         grid-template-columns: 100%;
         gap: 66px;
+    }
+
+    .description-title{
+      text-align: center;
+   }
+
+    .description-text{
+        text-align: center;
     }
 
     .option-ul{
