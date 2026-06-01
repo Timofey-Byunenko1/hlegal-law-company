@@ -395,30 +395,16 @@ position: relative;
 
 
 
-@media screen and (min-width:768px) {
-.container{
-    max-width: calc(650px + 60px + 60px);
-    padding: 0 30px;
-}    
+@media (min-width: 768px) {
+    .container {
+        padding-left:  30px;
+        padding-right: 30px;
+    }
 }
 
-@media screen and (min-width:1024px) {
-.container{
-    max-width: calc(904px + 60px + 60px);
-    padding: 0 60px;
-}    
-}
-
-@media screen and (min-width:1400px) {
-.container{
-    max-width: calc(1320px + 60px + 60px);
-    padding: 0 30px;
-}    
-}
-
-@media screen and (min-width:1920px) {
-.container{
-    max-width: calc(1320px + 60px + 60px);
-    padding: 0 30px;
-}    
+@media (min-width: 1400px) {
+    .container {
+        padding-left:  60px;
+        padding-right: 60px;
+    }
 }

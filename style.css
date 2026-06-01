@@ -10,6 +10,7 @@ outline: 0;
 color: inherit;
 font-size: inherit;
 font-family: Montserrat;
+list-style: none;
 }
 
 html{
@@ -104,9 +105,19 @@ color:var(--active-active);
 }
 }
 
+.container{
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 0 auto; 
+}
+
 
 .gradient{
     background:var(--gradient-super-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
     position: relative;
     min-height: 100vh;
     overflow: hidden;
@@ -115,14 +126,9 @@ color:var(--active-active);
     border-bottom-left-radius: 4px;
 }
 
-.container{
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 60px;
-
-}
 
    .header{
+    padding: 0 60px;
     z-index: 1;
         position: absolute;
         top: 30px;
@@ -225,6 +231,7 @@ a{
 
 }
 
+
 .section-1{
     position: relative;
     padding-top: 116px;
@@ -240,8 +247,8 @@ a{
 
 .svg-logo{
     top: 0;
-    height: 100%;
     width: 120vh;
+    height: 100%;
     position: absolute;
     pointer-events: none;
 }
@@ -249,7 +256,7 @@ a{
 .title{
     position: absolute;
     z-index: 1;
-    top: 45%;
+    top: 47%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -296,48 +303,59 @@ svg{
 }
 
 
-.section-2{
-   padding: 100px 0 0 0;
-   max-width: 1200px;
-   margin: 0 auto;    
-
 .Our-values{
-    display: flex;
-    justify-content: center;
+   display: grid;
+   grid-template-columns: 39% 59%;
+    justify-content: space-between;
     align-items: center;
 
     svg{
     margin: 0 60px;}
 }
 
+.option-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    align-items: flex-end;
+    border-right: 4px solid var(--grey-text);
+}
 
 .option-text{
+    font-weight: 700;
+    font-size: 38px;
     text-align: right;
     margin: 30px;
     transition: 0.5s;
     color: var(--grey-text);
+
     &:hover{    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     background-image: var(--gradient-text);
 }
+
+    &:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: var(--gradient-text);
+    }
 }
 
-
-.description{
-    flex: 1;
-}
 
 .description-title{
-    color: var(--white);
     padding-bottom: 25px;
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: var(--gradient-text-gray);
 }
 
 .description-text{
     color: var(--white);
 }
-
 
 .benefit{
     margin: 250px 0 0 0;
@@ -350,7 +368,6 @@ svg{
     background-clip: text;
     background-image: var(--gradient-text);
 }
-
 
 .benefit-cards{
     margin: 340px 0 0 0;
@@ -380,7 +397,6 @@ svg{
     position: relative;
     top: -200px;
 }
-
 
 .benefit-btn{
     text-align: center;
@@ -499,25 +515,11 @@ p{
 
 }
 
-}
 
+ 
 .lower-section{
     padding: 30px 0 0 0;
     background:var(--grey-bg);
-}
-
-.slider-div{
-    border: 1px solid var(--grey-text);
-     background-color: var(--grey-bg);
-     display: flex !important;
-     border-radius: 6px;
-     img{
-        border-radius: 50%;
-     }
-}
-
-.section-footer{
-    background-color: var(--grey-bg);
 }
 
 .trust-title{
@@ -583,7 +585,7 @@ p{
 }
 
 .publications{
-    margin-top: 300px;
+    margin: 300px 0 0 0;
 }
 
 .publications-title{
@@ -599,11 +601,10 @@ p{
     display: grid;
     justify-content: center;
     column-gap: 28px;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 32% 32% 32%;
 }
 
 .div-box{
-    width: 420px !important;
 position: relative;    
 padding: 15px;    
 border-radius: 10px;
@@ -666,9 +667,8 @@ transition: 0.3s ease;
 
 .footer{
     border-top: 3px solid var(--grey-separator);
-    margin: 80px 0 0 0;
     padding: 10px 0 30px 0;
- 
+    margin: 66px 0 0 0;
 
     .upper{
         padding-top: 30px;
@@ -746,33 +746,14 @@ transition: 0.3s ease;
     }
 }
 
-
-
-@media screen and (min-width:768px) {
-.container{
-    max-width: calc(650px + 60px + 60px);
-    padding: 0 30px;
-}    
+@media (min-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
 }
 
-@media screen and (min-width:1024px) {
-.container{
-    max-width: calc(904px + 60px + 60px);
-    padding: 0 60px;
-}    
+@media (min-width: 1400px) {
+    .container {
+        padding: 0 60px;
+    }
 }
-
-@media screen and (min-width:1400px) {
-.container{
-    max-width: calc(1320px + 60px + 60px);
-    padding: 0 30px;
-}    
-}
-
-@media screen and (min-width:1920px) {
-.container{
-    max-width: calc(1320px + 60px + 60px);
-    padding: 0 30px;
-}    
-}
-

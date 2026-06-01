@@ -20,9 +20,11 @@
 <body>
 
 
+<main>
+
 <section class="gradient">
 
-<header class="header container">
+<header class="header">
 
 
 <div class="header-logo">
@@ -63,9 +65,8 @@
 
 </header>
 
-<section class="section-1">
 
-<div class="container">
+<section class="section-1">
 
 <div class="logo">
 
@@ -85,36 +86,38 @@
 </a>
     
 </div>
-
-</div>
-
-
 </section>
-
-
-<section id="section-2" class="section-2">
 
 <div class="container">
 
-<div class="Our-values">
 
-<div class="option">
-<h1 class="option-text">Consistent</h1>
-<h1 class="option-text">Customer oriented</h1>
-<h1 class="option-text">Innovative</h1>
-<h1 class="option-text">Business oriented</h1>
+<div class="Our-values"  id="tabs">
+
+<div>
+  <ul class="option-ul">
+<li><a class="option-text" href="#tabs-1">Consistent</a></li>
+<li><a class="option-text" href="#tabs-2">Customer oriented</a></li>
+<li><a class="option-text" href="#tabs-3">Innovative</a></li>
+<li><a class="option-text" href="#tabs-4">Business oriented</a></li>
+ </ul>
 </div>
 
-<svg width="4" height="303" viewBox="0 0 4 303" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="4" height="303" fill="white" fill-opacity="0.3"/>
-</svg>
-
-
-<div class="description">
-<h2 class="description-title">We turn the idea of legal services</h2>
-<p class="description-text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. 
- Many of them form the practice of applying the law of the sea in Ukraine.</p>
-</div>
+  <div id="tabs-1">
+    <h1 class="description-title">Reliable Support You Can Trust.</h1>
+    <p class="description-text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+  </div>
+  <div id="tabs-2">
+    <h1 class="description-title">Your Goals Come First.</h1>
+    <p class="description-text">We take time to understand your business, challenges, and priorities. This allows us to provide practical legal advice tailored to your specific needs rather than generic solutions.</p>
+  </div>
+  <div id="tabs-3">
+    <h1 class="description-title">Forward-Thinking Legal Solutions.</h1>
+    <p class="description-text">We combine legal expertise with a forward-looking approach, helping clients navigate digital transformation, emerging regulations, and complex business environments with confidence.</p>
+  </div>
+  <div id="tabs-4">
+    <h1 class="description-title">Focused on Business Success</h1>
+    <p class="description-text">Our focus goes beyond legal compliance. We help businesses minimize risks, protect assets, and make decisions that contribute to long-term success and sustainable growth.</p>
+  </div>
 
 </div>
 
@@ -273,7 +276,7 @@ The team handled our corporate case with professionalism and attention to detail
 <div><svg width="40px" height="40px"><use href="./sprite.svg#avatar"></use></svg>
 <h4>Sullivan Knoth</h4></div>
 <h5>★★★★★</h5>
-<p>Professional, responsive, and highly experienced.</p>
+<p>Professional, responsive, and highly experienced.🔥</p>
 </div>
 
 <div class="reviews-blocks wow animate__fadeInRight" data-wow-duration="2.5s" >
@@ -305,15 +308,15 @@ The team handled our corporate case with professionalism and attention to busine
 
 
 </div>
-</section>
+
+<!-- </section> -->
+
+</div>
 
 </section>
-
 
 
 <section class="lower-section">
-
-<section class="section-footer">
 
 <div class="container">
 
@@ -335,21 +338,18 @@ The team handled our corporate case with professionalism and attention to busine
 <div class="companies wow animate__fadeIn" data-wow-duration="6.0s" ><img src="./img/ifratek.png" alt=""></div>
 <div class="companies wow animate__fadeIn" data-wow-duration="6.0s" ><img src="./img/citypark.png" alt=""></div>
 <div class="companies wow animate__fadeIn" data-wow-duration="6.0s" ><img src="./img/art-print.png" alt=""></div>
-<div class="companies wow animate__fadeIn" data-wow-duration="6.0s"><img src="./img/ultimatecard.png" alt=""></div>
+<div class="companies wow animate__fadeIn" data-wow-duration="5.6s"><img src="./img/ultimatecard.png" alt=""></div>
 
 </div>
 
 </div>
-
 
 
 <div class="publications">
 
-<h1 class="publications-title wow animate__fadeInUp" data-wow-duration="2.0s">We have something to tell you</h1>
+<h1 class="publications-title wow animate__fadeInUp" data-wow-duration="2.2s">We have something to tell you</h1>
 
-<div class="swiper">
-
-<div class="publication-div swiper-wrapper">
+<div class="publication-div">
 
 <a href="/pages/publication.html" class="div-box wow animate__fadeInUp swiper-slide" data-wow-duration="2.0s">
 <img src="./img/Equity associate.png" alt="">
@@ -391,7 +391,6 @@ The team handled our corporate case with professionalism and attention to busine
 
 </div>
 
-</div>
 
 <div class="footer">
 
@@ -411,23 +410,36 @@ The team handled our corporate case with professionalism and attention to busine
 </div>
 </div>
 
+
 </div>
 
 </section>
 
-</section>
+</main>
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-<script src="./main.js"></script>
 
 
 <script src="./wow/wow.js"></script>
 <script>
   new WOW().init();
 </script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" 
+integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous">
+</script>
+
+  <script>
+  $( function() {
+    $("#tabs").tabs();
+  } );
+  </script>
+
+
 
 </body>
 </html>
