@@ -445,7 +445,7 @@ a{
     padding: 110px 0 0 0;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    column-gap: 16px;
+    gap:0 16px;
     
     .div{
         display: flex;
@@ -600,7 +600,7 @@ p{
     padding-top: 60px;
     display: grid;
     justify-content: center;
-    column-gap: 28px;
+    gap:0 28px;
     grid-template-columns: 32% 32% 32%;
 }
 
@@ -746,14 +746,93 @@ transition: 0.3s ease;
     }
 }
 
-@media (min-width: 768px) {
-    .container {
-        padding: 0 30px;
-    }
-}
-
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
     .container {
         padding: 0 60px;
     }
+
+    .benefit-cards{
+        margin: 120px 0 0 0;
+        grid-template-columns: 100%;
+        gap: 120px;
+    }
+
+    .card:nth-child(1), .card:nth-child(3), .card:nth-child(5){
+        top: 0;
+    }
+
+    .result-div{
+        grid-template-columns: 50% 50%;
+        gap: 66px 0;
+    }
+
+    .trust-companies{
+        grid-template-columns: 50% 50%;
+    }
+
+    .publication-div{
+        grid-template-columns: 50% 50%;
+        gap: 66px 28px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .Our-values{
+        grid-template-columns: 100%;
+        gap: 66px;
+    }
+
+    .option-ul{
+        align-items: center;
+        border-right: 0px;
+        border-bottom: 4px solid var(--grey-text);
+        padding: 28px 0;
+    }
+
+    .option-text{
+    font-size: 32px;
+    }
+
+    .card{
+        flex-direction: column;
+    }
+
+    .card-text{
+        text-align: center;
+    }
+
+    .result-div{
+        grid-template-columns: 100%;
+        gap: 124px;
+    }
+
+    .reviews-div{
+        grid-template-columns: 100%;
+    }
+
+    .trust-companies{
+        grid-template-columns: 100%;
+        gap: 2px;
+    }
+
+    .publication-div{
+        grid-template-columns: 100%;
+    }
+
+    .upper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lower{
+        flex-direction: column-reverse;
+    }
+
 }
