@@ -336,12 +336,13 @@ svg{
 .option-ul{
     display: flex;
     flex-direction: column;
-    gap: 42px;
     align-items: flex-end;
     border-right: 4px solid var(--grey-text);
 }
 
 .option-text{
+    width: max-content;
+    display: block;
     font-weight: 700;
     font-size: 38px;
     text-align: right;
@@ -351,7 +352,6 @@ svg{
 
     &:hover{    
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
     background-image: var(--gradient-text);
 }
@@ -364,6 +364,12 @@ svg{
     }
 }
 
+.ui-tabs-active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: var(--gradient-text);
+}
 
 .description-title{
     padding-bottom: 25px;
@@ -476,7 +482,6 @@ a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    background-image: var(--gradient-text-gray);
     background-image: var(--gradient-text);
         }
 
@@ -837,14 +842,12 @@ transition: 0.3s ease;
     }
 
     .option-ul{
+        overflow: auto;
         align-items: center;
+        flex-direction: row;
         border-right: 0px;
         border-bottom: 4px solid var(--grey-text);
         padding: 28px 0;
-    }
-
-    .option-text{
-    font-size: 32px;
     }
 
     .card{
