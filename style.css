@@ -933,8 +933,12 @@ transition: 0.3s ease;
         gap: 26px;
     }
 
+.section-1 .logo .title{
+        top: 40%;
+    }
+
     .title-small{
-        top: 60%;
+        top: 52%;
     }
 
     .Our-values{
@@ -957,6 +961,10 @@ transition: 0.3s ease;
         border-right: 0px;
         border-bottom: 4px solid var(--grey-text);
         padding: 28px 0;
+    }
+
+    .option-text{
+        margin: 30px 60px;
     }
 
     .card{
