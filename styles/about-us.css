@@ -691,7 +691,7 @@ overflow: hidden;
 }
 
 
-@media (max-width: 425px) {
+@media (max-width: 476px) {
 
 .header-mobile{
     gap: 0;
