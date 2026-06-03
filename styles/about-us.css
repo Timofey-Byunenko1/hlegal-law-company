@@ -640,6 +640,7 @@ overflow: hidden;
 
     .discription{
         grid-template-columns: 100%;
+        padding: 0 30px;
     }
 
     .discription-left{
@@ -662,6 +663,7 @@ overflow: hidden;
 
    .benefit{
       grid-template-columns: 100%;
+      padding: 60px 30px;
    }
 
    .benefit-title{
@@ -686,4 +688,41 @@ overflow: hidden;
         }
      }
    }
+}
+
+
+@media (max-width: 375px) {
+
+.header-mobile{
+    gap: 0;
+} 
+
+    .header-logo{
+        svg{
+            width: 60%;
+        }
+    }
+
+
+    .header-mobile {
+    .hamburger{top: 95%;}
+    }
+
+    .header-mobile {
+          .hamburger div{
+        height: 4px;
+        margin-top: 4px;
+        width: 2rem;
+    }
+    }
+
+    .Team {
+        .title{
+            font-size: 48px;
+            letter-spacing: 16px;
+        }
+
+    }
+
+  
 }
