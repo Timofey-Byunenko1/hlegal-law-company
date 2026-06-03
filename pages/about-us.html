@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="..css/animate.css">
+    <link rel="stylesheet" href="../animate.css">
    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -64,6 +64,60 @@
 </div>
 
 </header>
+
+<header class="header-mobile">
+
+<div class="header-nav-mobile">
+    <div> 
+      <button class="button-header">ук</button>
+      <button class="button-header">ру</button>
+      <button class="button-header">en</button>
+    </div>
+
+<div class="navigation">
+      <h5 class="h5">+3800 211 927</h5>
+</div>    
+    
+</div>
+
+<div class="header-bottom">
+
+<div class="header-logo">
+<svg width="302px" height="60px">
+<use href="../sprite.svg#logo-about"></use>
+</svg>
+</div>
+
+<div class="burger-icon">
+
+<input id="toggle" type="checkbox"></input>
+
+<label for="toggle" class="hamburger">
+  <div class="top-bun"></div>
+  <div class="meat"></div>
+  <div class="bottom-bun"></div>
+</label>
+
+<div class="nav">
+  <div class="nav-wrapper">
+    <nav>
+      <a href="../pages/about-us.html">main</a><br>
+      <a href="../pages/services.html">services</a><br>
+      <a href="../pages/team.html">team</a><br>
+      <a href="../pages/publication.html">publications</a><br>
+      <a href="../pages/contact.html">contact</a>
+    </nav>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+
+
+</header>
+
 
 
 <div class="container">
@@ -146,27 +200,36 @@
     
     <div class="achievements">
 
-    <h2 class="achievements-title">achievements:</h2>
+    <h3 class="achievements-title">achievements:</h3>
 
     <div class="slider">
+
         <div class="slider-block">
-<h1> 12+ </h1>
-<h2>years experience</h2>
+<h1>12+</h1>
+<p>years experience</p>
 </div>
 
         <div class="slider-block">
 <h1>500+</h1>
-<h2>Successful cases</h2>
+<p>Successful cases</p>
 </div>
 
         <div class="slider-block">
 <h1>98%</h1>
-<h2>Client satisfaction</h2>
+<p>Client satisfaction</p>
 </div>
 
         <div class="slider-block">
 <h1>120+</h1>
-<h2>business clients</h2></div>
+<p>business clients</p>
+</div>
+
+       <div class="slider-block">
+<h1>24/7</h1>
+<p>Client Support</p>
+</div>
+
+
     </div>
 
   </div>  
@@ -210,14 +273,15 @@ $(document).ready(function(){
 
 $(".slider").slick({
   centerMode: true,
+  arrows: false,
   centerPadding: '60px',
-  slidesToShow: 3,
+  slidesToShow: 4,
   autoplay: true,
-  autoplaySpeed: 2300,
+  autoplaySpeed: 2200,
   speed: 900,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1400,
       settings: {
         arrows: false,
         centerMode: true,
@@ -226,15 +290,14 @@ $(".slider").slick({
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 768,
       settings: {
         arrows: false,
         centerMode: true,
         centerPadding: '40px',
         slidesToShow: 1,
-          slidesToScroll: 1,
       }
-    }
+    },
   ]
 });
 });

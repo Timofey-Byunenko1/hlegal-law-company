@@ -341,7 +341,6 @@ nav a:before {
   transition: all 0.2s ease-in-out;
 }
 
-
 #toggle:checked + .hamburger .top-bun {
   transform: rotate(-45deg);
   margin-top: 25px;
