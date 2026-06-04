@@ -671,9 +671,12 @@ overflow: hidden;
    }
 
    .footer {
+    display: flex;
+    flex-direction: column-reverse;
 
     .upper{
        flex-direction: column;
+       padding-top: 15px;
      }
 
      .lower{

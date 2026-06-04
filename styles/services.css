@@ -605,9 +605,15 @@ padding: 100px 0 0 0;
         gap: 2px;
     }
 
-    .upper {
+     .footer {
+        display: flex;
+        flex-direction: column-reverse;
+     }
+
+   .white .footer .upper {
         flex-direction: column;
         align-items: center;
+        padding-top: 15px;
     }
 
         .lower{
