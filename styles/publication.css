@@ -459,8 +459,7 @@ transition: 0.3s ease;
 
 .more-publication-button{
     text-align: center;
-    width: 211px;
-    height: 56px;
+    padding: 19px 38px;
     border-radius: 12px;
     background-color: var(--active-regular);
     color: var(--white);
@@ -469,8 +468,9 @@ transition: 0.3s ease;
     transition: 0.3s;
 
     &:hover{
-        width: 222px;
-        font-weight: 600;
+        padding: 19px 40px;
+        color: var(--white);
+        font-weight: 700;
         box-shadow: 0px 7px 20px 0px #24A3FF80;
     }
 }
