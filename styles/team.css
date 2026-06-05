@@ -358,6 +358,7 @@ nav a:before {
 }
 
 
+
 .main{
     position: relative;
     padding: 80px 0;
@@ -550,7 +551,7 @@ position: relative;
     }
 
      .team{
-        grid-template-columns: 60%;
+        grid-template-columns: 62%;
     }
 
     .team-title{
