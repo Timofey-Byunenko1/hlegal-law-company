@@ -26,8 +26,12 @@
     --white:#FFFFFF;
     --black:#000000;
 
-    --center:center;
-    --flex:flex;
+    --center: center;
+    --between: space-between;
+    --around:  space-around;
+    --flex: flex;
+    --column: column;
+    --row: row;
 
     --gradient-super-white: linear-gradient(330deg, #F5F5FA 89.93%,  #643E72 90.46%);;
 }

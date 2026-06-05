@@ -106,8 +106,8 @@ color:var(--active-active);
 
 .container{
     width: 100%;
-    max-width: 1320px;
-    padding: 0 15px;
+    max-width: 1440px;
+    padding: 0 60px;
     margin: 0 auto; 
 }
 
@@ -127,7 +127,6 @@ color:var(--active-active);
 
 
    .header{
-    padding: 0 60px;
     z-index: 1;
         position: absolute;
         top: 30px;
@@ -361,7 +360,7 @@ nav a:before {
 
 }
 
-.section-1{
+.hero{
     position: relative;
     padding-top: 116px;
     min-height: 100vh;
@@ -432,6 +431,13 @@ svg{
     pointer-events: none;
 }
 
+.main-gap{
+   display: var(--flex);
+   flex-direction: var(--column);
+   gap: 256px;
+   padding-bottom: 96px;
+}
+
 .Our-values{
    display: grid;
    grid-template-columns: 39% 59%;
@@ -492,9 +498,6 @@ svg{
     color: var(--white);
 }
 
-.benefit{
-    margin: 250px 0 0 0;
-}
 
 .benefit-title{
     text-align: center;
@@ -508,7 +511,7 @@ svg{
     margin: 340px 0 0 0;
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 300px 24px;
+    gap: 300px 0;
 }
 
 .card{
@@ -564,10 +567,6 @@ a{
 }
 }
 
-.result{
-    margin: 300px 0 0 0;
-}
-
 .result-title{
     text-align: center;
     -webkit-background-clip: text;
@@ -580,7 +579,6 @@ a{
     padding: 110px 0 0 0;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    gap:0 16px;
     
     .div{
         display: flex;
@@ -595,11 +593,6 @@ a{
         }
 
     }
-}
-
-.reviews{
-    margin-top: 350px;
-    margin-bottom: 200px;
 }
 
 .reviews-title{
@@ -650,8 +643,7 @@ p{
 }
 
 
- 
-.lower-section{
+.pre-footer{
     padding: 30px 0 0 0;
     background:var(--grey-bg);
 }
@@ -718,9 +710,6 @@ p{
     }
 }
 
-.publications{
-    margin: 300px 0 0 0;
-}
 
 .publications-title{
     text-align: var(--center);
@@ -800,11 +789,11 @@ transition: 0.3s ease;
 }
 
 .footer{
-    border-top: 3px solid var(--grey-separator);
-    padding: 10px 0 30px 0;
-    margin: 66px 0 0 0;
+    padding-top: 12px;
+    padding-bottom: 32px;
 
     .upper{
+        border-top: 3px solid var(--grey-separator);
         padding-top: 30px;
         display: flex;
         justify-content: space-between;
@@ -856,7 +845,7 @@ transition: 0.3s ease;
             &::after{
                 position: absolute;
                 left: -12%;
-                bottom: 28%;
+                bottom: 29%;
 
                 content: "";
                 width: 6px;
@@ -868,7 +857,7 @@ transition: 0.3s ease;
             &::before{
                 position: absolute;
                 right: -12%;
-                bottom: 28%;
+                bottom: 29%;
 
                 content: "";
                 width: 6px;
@@ -933,13 +922,21 @@ transition: 0.3s ease;
         gap: 26px;
     }
 
-.section-1 .logo .title{
+.hero .logo .title{
         top: 39%;
     }
 
-    .title-small{
+ .title-small{
         top: 52%;
     }
+
+.hero .logo {
+        .link{
+            display: none;
+        }
+    }
+
+    .main-gap{margin-bottom: 64px;}
 
     .Our-values{
         grid-template-columns: 100%;
