@@ -124,7 +124,7 @@ color:var(--active-active);
 
 
   .header{
-    padding-top: 30px;
+    padding: 30px 60px 0;
     display: var(--flex);
     justify-content: space-between;
     align-items: var(--center);
@@ -141,6 +141,24 @@ color:var(--active-active);
     display: var(--flex);
     justify-content: flex-end;
     gap: 15px;
+
+.here{
+       position: relative;
+       color: var(--accent-color);
+
+       &:after{
+        content: "";
+        width: 100%;
+        transition: 0.5s;
+        height: 3px;
+        position: absolute;
+        bottom: -40%;
+        left: 0;
+        border-radius: 5px;
+        background-color: var(--accent-color);
+    }
+
+}
 
 a{
     position: relative;
@@ -397,7 +415,7 @@ h3:hover{
 
 
 
-.white{
+.partners{
        background:var(--grey-bg);
 
 .they-trust-us{
@@ -568,7 +586,7 @@ padding: 100px 0 0 0;
         align-items: center;
     }
 
-       .white .trust-companies{
+       .partners .trust-companies{
         grid-template-columns: 50% 50%;
 }
 
@@ -600,7 +618,7 @@ padding: 100px 0 0 0;
         grid-template-columns: 90%;
     }
 
-    .white .trust-companies {
+    .partners .trust-companies {
         grid-template-columns: 100%;
         gap: 2px;
     }
@@ -610,7 +628,7 @@ padding: 100px 0 0 0;
         flex-direction: column-reverse;
      }
 
-   .white .footer .upper {
+   .partners .footer .upper {
         flex-direction: column;
         align-items: center;
         padding-top: 15px;

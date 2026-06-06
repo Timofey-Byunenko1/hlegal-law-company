@@ -105,6 +105,7 @@ color:var(--active-active);
 }
 
 .container{
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
     padding: 0 60px;
@@ -113,7 +114,7 @@ color:var(--active-active);
    
 
   .header{
-    padding-top: 30px;
+    padding: 30px 60px 0;
     display: var(--flex);
     justify-content: space-between;
     align-items: var(--center);
@@ -379,16 +380,17 @@ nav a:before {
 
 .discription{
     display: grid;
-    grid-template-columns: 58% 42%;
+    grid-template-columns: 44% 33%;
     margin-top: 60px;
-    padding: 0 180px;
+    justify-content: var(--center);
 }
 
 .discription-left{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 0 30px 0 0;
+    margin-right: 24px;
+
     .left-title{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -441,10 +443,11 @@ h1{
 }
 
 .benefit{
-    padding: 60px 180px;
+    padding: 64px 0;
     display: grid;
-    grid-template-columns: 66% 28%;
-    gap: 60px;
+    grid-template-columns: 43% 22%;
+    justify-content: var(--center);
+    gap: 64px;
 }
 
 .benefit-left{
@@ -463,7 +466,7 @@ h1{
 
 .achievements{
     border-top: 3px solid var(--grey-separator);
-    padding: 30px 0 30px 0;
+    padding: 16px 0 24px 0;
 }
 
 .achievements-title{
@@ -509,6 +512,7 @@ h1{
     flex-direction: column;
 
 }
+
 
 .slick-track{
 overflow: hidden;
