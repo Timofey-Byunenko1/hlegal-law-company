@@ -104,6 +104,7 @@ color:var(--active-active);
 }
 
 .container{
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
     padding: 0 60px;
@@ -112,7 +113,7 @@ color:var(--active-active);
 
 
   .header{
-    padding-top: 30px;
+    padding: 30px 60px 0;
     display: var(--flex);
     justify-content: space-between;
     align-items: var(--center);
@@ -361,13 +362,15 @@ nav a:before {
 
 .main{
     padding: 45px 0;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 75%;
-    justify-content: center;
 }
 
 .description{
+
+    text-align: center;
+    display: grid;
+    grid-template-columns: 78%;
+    justify-content: center;
+
     p{
         color: var(--black);
     }
@@ -483,7 +486,7 @@ p,h1,h2,h3,h4,h5{
 }
 
 
-.lower{
+.recommended{
     background-color: var(--grey-bg);
 }
 
@@ -508,7 +511,7 @@ p,h1,h2,h3,h4,h5{
     display: grid;
     justify-content: center;
     column-gap: 28px;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 31% 31% 31%;
 }
 
 
