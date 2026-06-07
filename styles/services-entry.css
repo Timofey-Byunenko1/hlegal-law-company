@@ -104,6 +104,7 @@ color:var(--active-active);
 }
 
 .container{
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
     padding: 0 60px;
@@ -452,7 +453,7 @@ nav a:before {
     display: grid;
     justify-content: center;
     column-gap: 28px;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 31% 31% 31%;
 }
 
 .div-box{
